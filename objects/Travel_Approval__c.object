@@ -284,13 +284,15 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Travel Approvals</pluralLabel>
-    <searchLayouts>
-        <searchResultsAdditionalFields>Purpose_of_Trip__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Destination_State__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Trip_Start_Date__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Trip_End_Date__c</searchResultsAdditionalFields>
-    </searchLayouts>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Destination_State_must_be_uppercase</fullName>
+        <active>true</active>
+        <description>Destination State must be entered in UPPERCASE</description>
+        <errorConditionFormula>Destination_State__c &lt;&gt; UPPER( Destination_State__c )</errorConditionFormula>
+        <errorDisplayField>Destination_State__c</errorDisplayField>
+        <errorMessage>Destination State must be entered in UPPERCASE</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>
