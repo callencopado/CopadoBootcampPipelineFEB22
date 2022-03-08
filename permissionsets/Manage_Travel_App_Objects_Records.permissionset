@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Assign to Users on the Bootcamp Standard Profile to extend Permissions on the Travel App Objects from Create/Read to Full Permission</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Manage Travel App Objects&apos; Records</label>
+</PermissionSet>
