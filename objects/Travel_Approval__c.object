@@ -271,6 +271,12 @@
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
+    <listViews>
+        <fullName>Open_Out_of_State_Travel_Requests</fullName>
+        <columns>NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>Open Out of State Travel Requests</label>
+    </listViews>
     <nameField>
         <displayFormat>TA-{00000}</displayFormat>
         <label>Travel Approval #</label>
@@ -278,7 +284,13 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Travel Approvals</pluralLabel>
-    <searchLayouts />
+    <searchLayouts>
+        <searchResultsAdditionalFields>Purpose_of_Trip__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Destination_State__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Trip_Start_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Trip_End_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
