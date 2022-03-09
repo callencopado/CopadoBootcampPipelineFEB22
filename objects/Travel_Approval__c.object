@@ -159,6 +159,7 @@
         <label>Destination State</label>
         <length>2</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -168,11 +169,12 @@
         <fullName>External_Id__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>External Id</label>
+        <label>OLDExternal Id</label>
         <referenceTo>Department__c</referenceTo>
         <relationshipLabel>Travel Approvals</relationshipLabel>
         <relationshipName>Travel_Approvals</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -182,6 +184,7 @@
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Out-of-State</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -191,6 +194,7 @@
         <externalId>false</externalId>
         <label>Purpose of Trip</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -200,6 +204,7 @@
         <externalId>false</externalId>
         <label>Status</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -244,6 +249,7 @@
         <externalId>false</externalId>
         <label>Trip End Date</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
@@ -253,6 +259,7 @@
         <externalId>false</externalId>
         <label>Trip Start Date</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
@@ -263,6 +270,7 @@
         <columns>NAME</columns>
         <columns>External_Id__c</columns>
         <columns>Purpose_of_Trip__c</columns>
+        <columns>Department__c</columns>
         <columns>Status__c</columns>
         <columns>Trip_Start_Date__c</columns>
         <columns>Trip_End_Date__c</columns>
