@@ -7103,7 +7103,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Travel_Approval__c.External_Id__c</field>
+        <field>Travel_Approval__c.External_Id_OLD__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
